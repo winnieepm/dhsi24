@@ -1,8 +1,10 @@
-# My Portfolio
+# \#11 Critical Making, and Slow Scholarship in the Age of AI
+## a portolio
 
-Welcome to my portfolio! I am passionate about coding and enjoy working on various projects. Below are some of my recent projects:
+hii. i put this page together as part of the last exercise for course #11 of the Digital Humanities Summer Institue 2024, co-taught in-person at UVic, Canada, by Anastasia Salter and John Murray. it brings together a sample collection of the work accomplished through the 5 days that the class lasts. i hope it sparks some ideas!
 
-## Projects
+here's the showcase: 
+## thought/code exercises
 
 <!-- - [Project 1: Project Name](https://example.com/project1) -->
 - [Twine](twine-cfractales_conceptos.html)
@@ -11,8 +13,3 @@ Welcome to my portfolio! I am passionate about coding and enjoy working on vario
 - [P5](p5.html)
 - [Tracery](tracery1st.html)
 
-Feel free to explore these projects to learn more about my work!
-
----
-
-This is just a sample structure. You can replace the project names and URLs with your actual project names and links. You can also add more sections, such as an "About Me" section or a "Skills" section, as needed.
