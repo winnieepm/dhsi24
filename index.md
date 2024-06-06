@@ -6,9 +6,9 @@ Welcome to my portfolio! I am passionate about coding and enjoy working on vario
 
 <!-- - [Project 1: Project Name](https://example.com/project1) -->
 - [Twine](twine-cfractales_conceptos.html)
-- [Bitsy]()
+- [Bitsy](fix_your_power.html)
 - [Taroko Gorge Remixed](toy-garbage.html)
-- [P5]()
+- [P5](p5.html)
 - [Tracery](tracery1st.html)
 
 Feel free to explore these projects to learn more about my work!
