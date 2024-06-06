@@ -6,8 +6,6 @@ Welcome to my portfolio! I am passionate about coding and enjoy working on vario
 
 <!-- - [Project 1: Project Name](https://example.com/project1) -->
 - [Twine](twine-cfractales_conceptos.html)
-<iframe src="twine-cfractales_conceptos.html" width="600" height="400" frameborder="0"></iframe>
-
 - [Bitsy](fix_your_power.html)
 - [Taroko Gorge Remixed](toy-garbage.html)
 - [P5](p5.html)
