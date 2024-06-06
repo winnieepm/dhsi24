@@ -4,12 +4,12 @@ Welcome to my portfolio! I am passionate about coding and enjoy working on vario
 
 ## Projects
 
-- [Project 1: Project Name](https://example.com/project1)
-- [Project 2: Project Name](https://example.com/project2)
-- [Project 3: Project Name](https://example.com/project3)
-- [Project 4: Project Name](https://example.com/project4)
-- [Project 5: Project Name](https://example.com/project5)
-- [Project 6: Project Name](https://example.com/project6)
+<!-- - [Project 1: Project Name](https://example.com/project1) -->
+- [Twine](twine-cfractales_conceptos.html)
+- [Bitsy]()
+- [Taroko Gorge Remixed](toy-garbage.html)
+- [P5]()
+- [Tracery](tracery-1st.html)
 
 Feel free to explore these projects to learn more about my work!
 
