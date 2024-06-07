@@ -10,8 +10,8 @@ here's the showcase:
   <img src="grids-gestures.jpeg" alt="sketchbook with comic-like grid pencil drawing" style="width:350px; display:block; margin: auto; border:3px solid black; border-radius: 10px;"/>
 
 - [Twine](twine-cfractales_conceptos.html)
-- [Bitsy](fix_your_power.html)
-  <iframe src="fix_your_power.html" title="fix your power (bitsy game)" styles="width:350px; border:3px solid black; border-radius: 10px;"></iframe>
+- [Bitsy](fix_your_power.html) <br><br>
+  <iframe src="fix_your_power.html" title="fix your power (bitsy game)" styles="width:350px; border:none; display: blocl; margin: auto;"></iframe>
 
 - [Taroko Gorge Remixed](toy-garbage.html)
 - [P5](p5.html)
