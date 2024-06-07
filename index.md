@@ -8,7 +8,7 @@ here's the showcase:
 
 - gris and gestures
   <!-- ![drawing sketchbook with comic-like grid pencil drawing](grids-gestures.jpeg)   -->
-  <img src="grids-gestures.jpeg" alt="drawdrawing sketchbook with comic-like grid pencil drawing" style="width:200px;"/>
+  <img src="grids-gestures.jpeg" alt="sketchbook with comic-like grid pencil drawing" style="width:250px;"/>
 
 - [Twine](twine-cfractales_conceptos.html)
 - [Bitsy](fix_your_power.html)
