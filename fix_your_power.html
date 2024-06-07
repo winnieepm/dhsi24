@@ -6,10 +6,10 @@
 
 <meta charset="UTF-8">
 
-<title>fix your power</title>
+<title>fix your power{pg}it's 2am, 105F degrees, and humidity is at 66% during a power outage. you want to take a cold shower, but the water pumps don't work without power.{pg}fix the electric poles nearby so you can shower.</title>
 
 <script type="text/bitsyGameData" id="exportedGameData">
-fix your power
+fix your power{pg}it's 2am, 105F degrees, and humidity is at 66% during a power outage. you want to take a cold shower, but the water pumps don't work without power.{pg}fix the electric poles nearby so you can shower.
 
 # BITSY VERSION 8.12
 
@@ -27,15 +27,15 @@ NAME blueprint
 
 ROOM 0
 b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
-b,0,0,0,b,b,0,0,0,0,0,0,0,0,0,b
+b,0,0,0,0,b,0,0,0,0,0,0,0,0,0,b
 b,0,0,0,0,b,0,0,0,b,b,b,b,0,0,b
 b,0,0,0,0,b,0,0,0,b,0,0,0,0,0,b
 b,0,0,0,b,b,0,0,0,b,b,b,0,0,0,b
-b,0,0,0,0,0,0,0,0,b,b,b,b,0,0,b
+b,0,0,0,0,0,0,0,0,b,b,b,b,b,0,b
 b,0,0,0,0,0,b,0,0,0,0,0,0,0,0,b
 b,b,b,b,b,0,b,0,0,0,0,0,b,b,0,b
 b,0,0,0,0,0,b,0,b,b,b,b,b,0,0,b
-b,0,0,0,0,0,b,0,b,0,b,0,0,0,0,b
+b,0,0,0,0,0,b,0,b,0,0,0,0,0,0,b
 b,0,0,0,0,0,0,0,b,0,b,b,0,0,0,b
 b,b,b,b,b,0,0,0,b,d,b,0,0,0,0,b
 b,0,0,0,b,0,0,0,b,b,b,0,0,b,0,b
@@ -49,7 +49,6 @@ ITM 2 10,3
 ITM 2 1,13
 ITM 2 14,12
 ITM 2 1,9
-ITM 2 13,6
 EXT 9,11 0 13,14
 EXT 13,14 0 9,11
 PAL 0
@@ -92,7 +91,7 @@ NAME secret door
 SPR A
 00011000
 00011000
-00011000
+00001000
 00111100
 01111110
 10111101
@@ -107,7 +106,7 @@ SPR A
 00111100
 00100100
 00100000
-POS 0 1,4
+POS 0 7,5
 
 SPR a
 00000000
@@ -139,9 +138,9 @@ SPR b
 00011000
 00011000
 00011000
-NAME post1
-DLG 7
-POS 0 4,1
+NAME pole1
+DLG e
+POS 0 3,10
 
 SPR c
 00011000
@@ -165,9 +164,9 @@ SPR e
 00011000
 00011000
 00011000
-NAME post2
-DLG 7
-POS 0 13,6
+NAME pole2
+DLG d
+POS 0 13,4
 
 ITM 2
 00000000
@@ -180,30 +179,63 @@ ITM 2
 00100000
 NAME bolt
 
-DLG 7
-"""
-{
-  - {item "bolt"} >= 3 ?
-    you stabilized the pole's energy flow! this energy pole is fixed.
-  - else ?
-    this pole is faulty. you don't have enough voltage to fix it yet {drwi "bolt"}
-}{pole = pole + 1}{item "bolt" {{item "bolt"} - 3}}
-"""
-NAME pole dialog
-
 DLG a
 """
 {
-  - pole >= 2 ?
-    you restored your house's power. {wvy}Turn on the AC before you faint!{/wvy}{end}
+  - allpoles == 2 ?
+    you restored your house's power. {wvy}take a shower before you faint!{/wvy}{end}
   - else ?
-    it's 105F degrees, and humidity is at 66%. you want to turn on the AC, but the power voltage is too low.{pg}fix 2 electric poles nearby so you can turn on the AC!
+    fix the electric poles nearby so you can shower.
 }
 """
 NAME house
 
-VAR pole
-2
+DLG d
+"""
+{
+  - pole2 == 2 ?
+    this pole is fixed.{pole2 = 2}
+  - else ?
+    {
+      - {item "bolt"} <= 2 ?
+        {sequence
+          - collect bolts ({drwi "bol"}) to fix the voltage in this pole!
+          - you need more bolts...
+        }{pole2 = 0}
+      - else ?
+        yes! you stabilized the voltage flow :){item "bolt" {{item "bolt"} - 3}}{pole2 = 2}{allpoles = allpoles + 1}
+    }
+}
+"""
+NAME pole2
+
+DLG e
+"""
+{
+  - pole1 == 2 ?
+    this pole is fixed.{pole1 = 2}
+  - else ?
+    {
+      - {item "bolt"} <= 2 ?
+        {sequence
+          - collect bolts ({drwi "bol"}) to fix the voltage in this pole!
+          - you need more bolts...
+        }{pole1 = 0}
+      - else ?
+        yes! you stabilized the voltage flow :){item "bolt" {{item "bolt"} - 3}}{pole1 = 2}{allpoles = allpoles + 1}
+    }
+}
+"""
+NAME pole1
+
+VAR pole1
+0
+
+VAR pole2
+0
+
+VAR allpoles
+0
 
 TUNE 3
 3F5,0,0,A#,0,2C#5,0,A#,3F5,0,0,F#5,0,0,2F5,0
