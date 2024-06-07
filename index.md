@@ -11,6 +11,8 @@ here's the showcase:
 
 - [Twine](twine-cfractales_conceptos.html)
 - [Bitsy](fix_your_power.html)
+  <iframe src="fix_your_power.html" title="fix your power (bitsy game)" styles="width:350px; border:3px solid black; border-radius: 10px;"></iframe>
+
 - [Taroko Gorge Remixed](toy-garbage.html)
 - [P5](p5.html)
 - [Tracery](tracery1st.html)
