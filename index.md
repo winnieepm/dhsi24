@@ -6,8 +6,10 @@ hii. i put this page together as part of the last exercise for course #11 of the
 here's the showcase: 
 ## thought/code exercises
 
-- [gris and gestures](#)
-  ![drawing sketchbook with comic-like grid pencil drawing](grids-gestures.jpeg)  
+- gris and gestures
+  <!-- ![drawing sketchbook with comic-like grid pencil drawing](grids-gestures.jpeg)   -->
+  <img src="grids-gestures.jpeg" alt="drawdrawing sketchbook with comic-like grid pencil drawing" style="width:400px; display: block; margin: auto;"/>
+
 - [Twine](twine-cfractales_conceptos.html)
 - [Bitsy](fix_your_power.html)
 - [Taroko Gorge Remixed](toy-garbage.html)
